@@ -22,14 +22,21 @@
         <nav>
             <h2>Coding Assignments</h2>
             <ul class="list-unstyled">
-                <li><a href="#" class="btn btn-outline-primary mb-2">Assignment 1 (Placeholder)</a></li>
-                <li><a href="#" class="btn btn-outline-primary mb-2">Assignment 2 (Placeholder)</a></li>
-                <li><a href="#" class="btn btn-outline-primary mb-2">Assignment 3 (Placeholder)</a></li>
+                <li><a href="#" class="btn btn-outline-primary mb-2" onclick="assignmentClicked('Assignment 1')">Assignment 1 (Placeholder)</a></li>
+                <li><a href="#" class="btn btn-outline-primary mb-2" onclick="assignmentClicked('Assignment 2')">Assignment 2 (Placeholder)</a></li>
+                <li><a href="#" class="btn btn-outline-primary mb-2" onclick="assignmentClicked('Assignment 3')">Assignment 3 (Placeholder)</a></li>
             </ul>
         </nav>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function assignmentClicked(assignmentName) {
+        alert('You clicked on ' + assignmentName + '! This is just a placeholder for now.');
+    }
+</script>
+
 </body>
 </html>
