@@ -2,18 +2,36 @@ body {
     font-family: Arial, sans-serif;
     margin: 40px;
     line-height: 1.6;
+    background-color: #FFD1DC; /* baby pink */
 }
+
 nav {
     margin-bottom: 20px;
 }
+
 nav a {
     margin-right: 10px;
     text-decoration: none;
     color: #333;
     padding: 5px 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #FFD1DC; /* baby pink border */
     border-radius: 5px;
+    background-color: #FFD1DC; /* baby pink background */
+    color: #fff; /* white text color */
 }
+
 nav a:hover {
-    background-color: #f5f5f5;
+    background-color: #FFB3C7; /* slightly darker pink on hover */
+    color: #fff; /* white text color on hover */
+}
+
+.btn-outline-primary {
+    color: #FFD1DC;
+    border-color: #FFD1DC;
+}
+
+.btn-outline-primary:hover {
+    background-color: #FFD1DC;
+    border-color: #FFD1DC;
+    color: white;
 }
