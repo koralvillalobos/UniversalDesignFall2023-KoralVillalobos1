@@ -8,31 +8,42 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header role="banner">
+    <a href="#main-content" class="skip-link btn btn-primary">Skip to main content</a>
+
+    <header class="container mt-3">
         <h1 class="visually-hidden">Travis Kelce - Wikipedia</h1>
-        <nav role="navigation" aria-label="Main">
-            <button id="menu-toggle" aria-controls="main-menu" aria-expanded="false">Main menu</button>
-            <div id="main-menu" aria-hidden="true">
-                <h2 class="visually-hidden">Navigation</h2>
-                <ul>
-                    <li><a href="/wiki/Main_Page">Main page</a></li>
-                    <li><a href="/wiki/Wikipedia:Contents">Contents</a></li>
-                    <li><a href="/wiki/Portal:Current_events">Current events</a></li>
-                    <li><a href="/wiki/Special:Random">Random article</a></li>
-                    <li><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
-                    <li><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
-                    <li><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en">Donate</a></li>
-                </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Wikipedia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/wiki/Main_Page">Main page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/wiki/Wikipedia:Contents">Contents</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/wiki/Portal:Current_events">Current events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/wiki/Special:Random">Random article</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en">Donate</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-    <main id="main-content">
+
+    <main id="main-content" class="container mt-3">
         <!-- Rest of the content goes here -->
     </main>
-    <footer role="contentinfo">
+
+    <footer class="container mt-3" role="contentinfo">
         <!-- Footer content goes here -->
     </footer>
+
+    <!-- Add Bootstrap JS at the end of the body for optimal performance -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
 
