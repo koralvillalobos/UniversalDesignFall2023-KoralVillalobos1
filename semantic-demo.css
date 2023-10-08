@@ -1,0 +1,78 @@
+
+body {
+    color: #E3FFEC;
+    background:#3200FF;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Hide only visually, but have it available for screen readers: */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: 'Noto Serif', serif;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  p {
+    line-height: 1.85em;
+    text-indent: 50px;
+    margin-bottom: 25px;
+  }
+  
+  .no-bullet {
+    list-style: none;
+  }
+  
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    /* font-size 1.8em; */
+  }
+  
+  nav ul li a:link {
+    color: white;
+  }
+  
+  nav ul li a:visited {
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+    background: white;
+  }
+  
+  nav ul li a:active {
+    color: yellow;
+  }

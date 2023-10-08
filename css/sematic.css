@@ -1,12 +1,87 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+/* Set default font family and background color */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #9E27FF;
+  /* background-color: black; */
+  font-size: 18px;
+  line-height: 1.5; /* Improved line height for better readability */
+  color: #fff; /* White text color for better contrast */
+}
+
+/* Container for content with a maximum width and centered */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* All headings are bold */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold; /* Make all headings bold */
+  margin-top: 1.5em; /* Add spacing between headings and content */
+}
+
+/* Adjust font sizes for headings */
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.6em;
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+h4{
+  font-size: 1.1em;
+}
+
+/* Hidden text for screen readers */
 .sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Improve color contrast for links */
+a {
+  color: #fff; /* White color for links */
+  text-decoration: underline; /* Add underline for links to make them more recognizable */
+}
+
+a:hover {
+  text-decoration: none; /* Remove underline on hover to maintain readability */
+}
+
+/* Remove bullet points from list items in the navigation menu */
+nav ul {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+/* Add this CSS rule to remove underlines from all links in the navigation menu */
+nav ul li a {
+  text-decoration: none; /* Remove underlines */
+  color: #fff; /* White text color */
+}
+
+/* Style for hovered links */
+nav ul li a:hover {
+  color: #007BFF; /* Blue text color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
