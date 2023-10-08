@@ -5,10 +5,9 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #9E27FF;
-  /* background-color: black; */
   font-size: 18px;
-  line-height: 1.5; /* Improved line height for better readability */
-  color: #fff; /* White text color for better contrast */
+  line-height: 1.5;
+  color: #fff;
 }
 
 /* Container for content with a maximum width and centered */
@@ -25,24 +24,24 @@ h4,
 h5,
 h6 {
   font-family: 'Merriweather', serif;
-  font-weight: bold; /* Make all headings bold */
-  margin-top: 1.5em; /* Add spacing between headings and content */
+  font-weight: bold;
+  margin-top: 1.5em;
 }
 
 /* Adjust font sizes for headings */
-h1{
+h1 {
   font-size: 2em;
 }
 
-h2{
+h2 {
   font-size: 1.6em;
 }
 
-h3{
+h3 {
   font-size: 1.3em;
 }
 
-h4{
+h4 {
   font-size: 1.1em;
 }
 
@@ -61,27 +60,27 @@ h4{
 
 /* Improve color contrast for links */
 a {
-  color: #fff; /* White color for links */
-  text-decoration: underline; /* Add underline for links to make them more recognizable */
+  color: #fff;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: none; /* Remove underline on hover to maintain readability */
+  text-decoration: none;
 }
 
 /* Remove bullet points from list items in the navigation menu */
 nav ul {
-  list-style-type: none; /* Remove default bullet points */
+  list-style-type: none;
 }
 
 /* Add this CSS rule to remove underlines from all links in the navigation menu */
 nav ul li a {
-  text-decoration: none; /* Remove underlines */
-  color: #fff; /* White text color */
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Style for hovered links */
 nav ul li a:hover {
-  color: #007BFF; /* Blue text color on hover */
-  text-decoration: underline; /* Add underline on hover */
+  color: #007BFF;
+  text-decoration: underline;
 }
