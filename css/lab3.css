@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+/* Skip Link */
+.skip-link {
+  background: #007BFF; /* Bright blue background */
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 16px;
+  position: absolute;
+  transform: translateY(-200%);
+  transition: transform 0.3s;
+}
+
+.skip-link:focus {
+  transform: translateY(-100%);
+}
+
+/* Body Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f9f9f9; /* Subtle light gray background */
+  color: #333; /* Dark gray text for better readability */
+}
+
+/* Container Styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+/* Adjust font sizes for headings */
+h1 {
+  font-size: 2.5em; /* Slightly larger font size */
+}
+
+h2 {
+  font-size: 2em; /* Slightly larger font size */
+}
+
+h3 {
+  font-size: 1.8em; /* Slightly larger font size */
+}
+
+h4 {
+  font-size: 1.6em; /* Slightly larger font size */
+}
+
+/* Hidden Text for Screen Readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Improve Color Contrast for Links */
+a {
+  color: #007BFF; /* Bright blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Remove Bullet Points from List Items in the Navigation Menu */
+nav ul {
+  list-style-type: none;
+}
+
+/* Style for Hovered Links */
+nav ul li a:hover {
+  color: #ff4500; /* Darker orange color on hover */
+  text-decoration: underline;
+}
