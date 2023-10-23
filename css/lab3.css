@@ -75,7 +75,7 @@ h4 {
 
 /* Improve Color Contrast for Links */
 a {
-  color: #007BFF; /* Bright blue link color */
+  color: #000000; /* Bright blue link color */
   text-decoration: none;
 }
 
