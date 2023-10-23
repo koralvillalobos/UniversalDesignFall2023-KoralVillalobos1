@@ -93,3 +93,9 @@ nav ul li a:hover {
   color: #ff4500; /* Darker orange color on hover */
   text-decoration: underline;
 }
+
+footer {
+  color: #000000; /* White text color in the footer */
+  text-align: center;
+  padding: 16px;
+}
