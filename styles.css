@@ -135,3 +135,35 @@ img {
   display: block; /* To remove any extra space below the image */
   margin: 0 auto; /* This will center the image in the container */
 }
+/* General link styles */
+a {
+  color: #0056b3; /* Choose a darker shade for better contrast */
+  text-decoration: none; /* Optional: removes the underline */
+}
+
+/* Link styles for a light background */
+a:link, a:visited {
+  color: #004494; /* Even darker shade for unvisited and visited links */
+}
+
+/* Link styles for a dark background, such as in the header or footer */
+header a, footer a {
+  color: #ffffff; /* White text for dark backgrounds */
+}
+
+/* Link styles for hover and focus states to maintain accessibility */
+a:hover, a:focus {
+  color: #002366; /* A different shade when the user hovers or focuses on the link */
+  background-color: #ffffff; /* Adding a background color can also help */
+  outline: 3px solid #ffffff; /* Adding an outline to focus state for better visibility */
+}
+
+/* Ensure that links within the header have enough contrast against the header background */
+header {
+  background-color: #483D8B; /* Use a color with good contrast against white */
+}
+
+/* Ensure that links within the footer have enough contrast against the footer background */
+footer {
+  background-color: #302b63; /* Use a color with good contrast against white */
+}
