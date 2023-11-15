@@ -51,8 +51,10 @@ img {
 }
 
 .skip-link:focus {
-    top: 0; /* Brings the link into view when focused */
-    border-color: white; /* High contrast border on focus */
+  top: 0; /* Brings the link into view when focused */
+  background: #0056b3; /* Darker shade of blue when focused */
+  color: white; /* Keeping text color white for contrast */
+  border-color: white; /* High contrast border on focus */
 }
 
 /* Header and Footer */
