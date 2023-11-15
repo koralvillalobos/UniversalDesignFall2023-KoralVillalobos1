@@ -167,3 +167,32 @@ header {
 footer {
   background-color: #302b63; /* Use a color with good contrast against white */
 }
+
+/* ... (rest of your CSS) ... */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Adjusted column sizes */
+  grid-template-rows: auto; /* Rows size adjust automatically */
+  grid-gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the entire grid */
+}
+
+header, footer {
+  grid-column: 1 / -1; /* Header and footer span all columns */
+}
+
+nav, main {
+  grid-column: 2; /* Nav and main content in the center column */
+}
+
+/* Responsive Design adjustments */
+@media screen and (max-width: 900px) {
+  .container {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+
+  nav, main, header, footer {
+      grid-column: 1; /* All elements span the full width */
+  }
+}
