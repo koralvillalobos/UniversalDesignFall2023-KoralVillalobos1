@@ -37,19 +37,22 @@ img {
   height: auto;
 }
 
-/* Skip Navigation Link */
+/* Skip Link Styling */
 .skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #000;
-  color: white;
-  padding: 8px 15px;
-  z-index: 100;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #007BFF; /* A bright, accessible blue */
+    color: white; /* White text for high contrast */
+    padding: 8px 15px;
+    z-index: 100;
+    transition: top 0.3s;
+    border: 2px solid transparent; /* For visible focus */
 }
 
 .skip-link:focus {
-  top: 0;
+    top: 0; /* Brings the link into view when focused */
+    border-color: white; /* High contrast border on focus */
 }
 
 /* Header and Footer */
