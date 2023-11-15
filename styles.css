@@ -71,7 +71,6 @@ header, footer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 10px;
-  /* ... (rest of your grid layout) ... */
 }
 
 /* Navigation */
@@ -105,8 +104,6 @@ a, .btn {
 :focus {
   outline: 3px solid #f00; /* Red outline for focused elements */
 }
-
-/* ... (include any additional CSS here) ... */
 
 .container {
   display: flex;
@@ -173,7 +170,6 @@ footer {
   background-color: #302b63; /* Use a color with good contrast against white */
 }
 
-/* ... (rest of your CSS) ... */
 
 .container {
   display: grid;
