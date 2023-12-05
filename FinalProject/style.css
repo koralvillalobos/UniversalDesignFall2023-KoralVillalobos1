@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Resetting default browser styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+/* Header and Navigation Styling */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #48BB78; /* Vibrant green background */
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.header-title h1 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    flex-grow: 1; /* Makes the title take the available space */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #2F855A; /* Darker green for contrast */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px; /* Slightly rounded corners for the boxes */
+    font-weight: 600;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #276749; /* Slightly darker green on hover/focus for better accessibility */
+}
+
+/* Other styles remain the same */
+
+
+
+/* Main content styling */
+main {
+    padding: 2rem;
+}
+
+main h2 {
+    color: #2F855A; /* Green color for headings */
+    font-size: 1.5rem;
+}
+
+main p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2F855A;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* ... (existing styles) */
+
+.content-box {
+    background-color: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px; /* Spacing around each box */
+    padding: 20px; /* Padding inside each box */
+    max-width: 800px; /* Max width for better readability */
+    margin-left: auto; /* Centering the box */
+    margin-right: auto;
+}
+
+
+
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ... (existing styles) */
+
+/* ... (existing styles) */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-box, .image-left, .image-right {
+    flex-basis: 100%; /* Full width for mobile view */
+    max-width: 100%;
+}
+
+/* For larger screens, adjust the width of content and images */
+@media screen and (min-width: 768px) {
+    .content-box, .image-left, .image-right {
+        flex-basis: calc(50% - 40px); /* Adjust the width as needed */
+    }
+
+    .image-left, .image-right {
+        padding: 10px;
+    }
+
+    .image-left img, .image-right img {
+        width: 100%;
+        height: auto;
+        max-height: 200px; /* Adjust as needed */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+/* Additional styles for content and images positioning */
+@media screen and (min-width: 1024px) {
+    .content-box {
+        flex-basis: 40%;
+    }
+
+    .image-left, .image-right {
+        flex-basis: 30%; /* Adjust this to change the image width */
+    }
+}
+
+/* ... (rest of the styles) */
