@@ -21,11 +21,144 @@
         </nav>
     </header>
     <main>
-        <h2>Implementing Universal Design in Web Development</h2>
-        <p>Content on how to technically achieve universal design...</p>
+        <section>
+            <h2>How to ensure that your website is universally designed?</h2>
+            <p>
+                You can add or use any of the following information to create a more universally designed website:
+            </p>
+            <section>
+                <h2>HTML5 Semantic Structure</h3>
+                    <details>
+                        <summary>What is Semantic Structure in HTML?</summary>
+                        <p>
+                            Semantic structure in web development refers to using HTML (Hypertext Markup Language) in a way that reinforces the meaning of the content on the web page. It involves choosing the right HTML elements to accurately represent the different parts and roles of your content. This practice not only makes web pages more informative and easier to understand for users but also for search engines and assistive technologies like screen readers.
+                        </p>
+                    
+                        <h3>Importance of Semantic Structure</h3>
+                        <ul>
+                            <li><strong>Accessibility:</strong> Screen readers and other assistive technologies rely on the semantic structure to convey information to users with disabilities. Proper use of elements like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt; helps these users navigate and understand the content more effectively.</li>
+                            <li><strong>SEO (Search Engine Optimization):</strong> Search engines use the semantic structure to index the content of web pages. Properly structured content can lead to better search engine rankings.</li>
+                            <li><strong>Maintainability:</strong> Semantic HTML makes it easier for developers to understand and maintain the code. It's more straightforward to identify the role of each part of the webpage.</li>
+                            <li><strong>Cross-Device Compatibility:</strong> Semantic structure helps ensure that content is displayed correctly across different devices and browsers.</li>
+                        </ul>
+                    </details>
+                    
+                <p>Semantic Elements</p>
+                <ul>
+                    <li><code>&lt;article&gt;</code>: Represents a self-contained composition in a document that's intended to be independently distributable or reusable (e.g., a forum post, a magazine or newspaper article).</li>
+                    <li><code>&lt;aside&gt;</code>:  Used for content that is tangentially related to the content around it, like a sidebar.</li>
+                    <li><code>&lt;details&gt;</code>: additional details that can be hidden</li>
+                    <li><code>&lt;figcaption&gt;</code>: is used for self-contained content, often with a visual aspect (like an image, diagram, or code snippet), with figcaption providing a caption.</li>
+                    <li><code>&lt;figure&gt;</code>: is used for self-contained content, often with a visual aspect (like an image, diagram, or code snippet), with figcaption providing a caption.</li>
+                    <li><code>&lt;footer&gt;</code>: Represents the footer of a document or section and often contains authorship information, copyright notices, links to privacy policies, etc.t</li>
+                    <li><code>&lt;header&gt;</code>: Represents introductory content or a set of navigational links. Typically contains the website's logo, title, and navigation menus.</li>
+                    <li><code>&lt;main&gt;</code>: Specifies the main content of a document. It's important for accessibility as it allows screen readers to quickly find the primary content.e</li>
+                    <li><code>&lt;mark&gt;</code>: marked or <mark>highlighted</mark> text</li>
+                    <li><code>&lt;nav&gt;</code>: Defines a section of navigation links. This element is often used for the main navigation menus.</li>
+                    <li><code>&lt;section&gt;</code>: Defines a section in a document. It's a thematic grouping of content, typically with a heading.</li>
+                    <li><code>&lt;summary&gt;</code>: defines a visible heading for the details element</li>
+                    <li><code>&lt;em&gt;</code>: <em>emphasized</em> text</li>
+                </ul>
+                <figure>
+                    <img src="img/1_GgI7FvfCwqSpHgn_VgGEXQ.jpg" alt="HTML 4 vs 5" width="400">
+                    <figcaption>WAVE interface logo.</figcaption>
+                </figure>
+            </section>
+            <section>
+                    <h2>Skip Navigation for Accessibility</h2>
+                    <p>
+                        Skip navigation is an important accessibility feature that allows users to quickly bypass repetitive or non-essential content and jump directly to the main content of a web page. This feature is particularly valuable for users who rely on screen readers or keyboard navigation to access web content.
+                    </p>
+                
+                    <h3>Why Skip Navigation?</h3>
+                    <p>
+                        The main reasons for implementing skip navigation are:
+                    </p>
+                    <ul>
+                        <li><strong>Enhanced Accessibility:</strong> Skip navigation helps users with disabilities, especially those who use screen readers, to avoid lengthy navigation menus, headers, and other content that may be repeated on multiple pages.</li>
+                        <li><strong>Efficient Navigation:</strong> It improves the efficiency of navigating web pages, as users can easily jump to the main content without having to listen to or tab through irrelevant content.</li>
+                        <li><strong>Compliance with Accessibility Standards:</strong> Many accessibility guidelines and standards, such as WCAG (Web Content Accessibility Guidelines), recommend or require the implementation of skip navigation links to improve web accessibility.</li>
+                    </ul>
+                
+                    <h3>Implementing Skip Navigation</h3>
+                    <p>
+                        To implement skip navigation on your website, follow these steps:
+                    </p>
+                    <ol>
+                        <li><strong>Add a Skip Navigation Link:</strong> Include a visible "Skip to main content" link at the very beginning of your HTML document, typically in the header. This link should be the first focusable element on the page.</li>
+                        <li><strong>Provide a Meaningful Label:</strong> Ensure that the skip navigation link has a clear and concise label like "Skip to main content" to convey its purpose to users.</li>
+                        <li><strong>Use CSS to Hide by Default:</strong> Initially, hide the skip navigation link from sighted users using CSS techniques like setting the link's position off-screen (e.g., using the `position: absolute; left: -9999px;` technique).</li>
+                        <li><strong>Make It Keyboard Accessible:</strong> Ensure that the skip navigation link is keyboard accessible, meaning users can focus and activate it using keyboard navigation (e.g., pressing the "Tab" key).</li>
+                        <li><strong>Show on Focus:</strong> Use CSS or JavaScript to make the skip navigation link visible when it receives keyboard focus. This ensures that it's visible to keyboard and screen reader users when they need it.</li>
+                    </ol>
+                
+                    <h3>Testing and Validation</h3>
+                    <p>
+                        After implementing skip navigation, thoroughly test it to ensure that it functions correctly with various assistive technologies. Use screen readers and keyboard navigation to verify its effectiveness in skipping to the main content.
+                    </p>
+                
+                    <p>
+                        By providing skip navigation functionality on your website, you enhance its accessibility, making it more inclusive and user-friendly for individuals with disabilities.
+                    </p>
+                
+            </section>
+
+            <section>
+                    <h2>Accessibility Testing Tools</h2>
+                    <p>
+                        Accessibility testing tools are essential for ensuring that web content is inclusive and usable by individuals with disabilities. Here, we'll explore three important tools that help assess and improve web accessibility.
+                    </p>
+                
+                    <h3>WAVE (Web Accessibility Evaluation Tool)</h3>
+                    <p>
+                        WAVE is a comprehensive web accessibility evaluation tool that aids authors in making their web content more accessible to individuals with disabilities. It serves several crucial functions:
+                    </p>
+                    <ul>
+                        <li><strong>Error Identification:</strong> WAVE identifies accessibility errors, including issues related to color contrast, semantic correctness, and missing alt-text for images.</li>
+                        <li><strong>Human Evaluation:</strong> While automated, WAVE also facilitates human evaluation of web content, allowing testers to review and confirm accessibility findings.</li>
+                        <li><strong>Color Contrast Analysis:</strong> WAVE can pinpoint contrast errors in colors and fonts, ensuring readability for users with visual impairments.</li>
+                    </ul>
+                
+                    <figure>
+                        <img src="img/WAVE-Logo.jpg" alt="WAVE interface showing accessibility errors" width="400">
+                        <figcaption>WAVE interface logo.</figcaption>
+                    </figure>
+                
+                    <h3>HTML5 Outliner</h3>
+                    <p>
+                        HTML5 Outliner is a valuable Chrome extension that generates a navigable page outline with heading and sectioning elements. It plays a vital role in accessibility testing by:
+                    </p>
+                    <ul>
+                        <li><strong>Creating Structure:</strong> HTML5 Outliner creates a table of contents of your page, helping you visualize the hierarchy and structure of your content.</li>
+                        <li><strong>Identifying Untitled Elements:</strong> It highlights potential issues with untitled elements, which could cause accessibility problems.</li>
+                    </ul>
+                
+                    <figure>
+                        <img src="img/outliner_demo.png" alt="HTML5 Outliner interface displaying page outline" width="300">
+                        <figcaption>HTML5 Outliner showing an outline</figcaption>
+                    </figure>
+                
+                    <h3>Nu HTML Validator</h3>
+                    <p>
+                        The Nu HTML Validator assists in catching unintended mistakes in your HTML, CSS, and SVG. It ensures that your code complies with accessibility standards, thereby enhancing web accessibility:
+                    </p>
+                    <ul>
+                        <li><strong>Error Detection:</strong> Nu HTML Validator identifies errors in your code that may affect accessibility, such as missing or misused elements.</li>
+                        <li><strong>Standard Compliance:</strong> It ensures that your code aligns with web accessibility standards, making your content more usable for individuals with disabilities.</li>
+                    </ul>
+                
+                    <figure>
+                        <img src="img/Figure20.gif" alt="Nu HTML Validator interface displaying warnings" width="400">
+                        <figcaption>HTML Validator interface</figcaption>
+                    </figure>
+                
+                    <p>
+                        By using these accessibility testing tools, web developers can identify and address accessibility issues, making their content more inclusive and user-friendly for a wider audience.
+                    </p>
+            </section>
     </main>
     <footer>
-        <!-- Footer as in index.html -->
+        <p>© 2023 Universal Design Initiative by Koral Villalobos.</p>
     </footer>
 </body>
 </html>
