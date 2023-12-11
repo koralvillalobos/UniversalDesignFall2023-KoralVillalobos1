@@ -36,21 +36,24 @@ img {
   width: 100%;
   height: auto;
 }
-
 .skip-link {
-  background: #0074d9; /* Adjust the background color */
-  color: #fff;
+  background-color: black; /* Black background */
+  color: white; /* White text color */
   font-weight: 700;
   padding: 4px;
   position: absolute;
   text-align: left;
   transform: translateY(-200%);
-  transition: transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s; /* Include background-color in the transition */
 }
 
 .skip-link:focus {
   transform: translateY(0);
+  background-color: black; /* Ensure the background remains black when focused */
+  color: white;
 }
+
+
 
 
 /* Header and Footer */
