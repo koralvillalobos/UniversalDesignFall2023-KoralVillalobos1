@@ -37,25 +37,20 @@ img {
   height: auto;
 }
 
-/* Skip Link Styling */
 .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #007BFF; /* A bright, accessible blue */
-    color: white; /* White text for high contrast */
-    padding: 8px 15px;
-    z-index: 100;
-    transition: top 0.3s;
-    border: 2px solid transparent; /* For visible focus */
-}
-
-.skip-link:focus {
-  top: 0; /* Brings the link into view when focused */
-  background: #0056b3; /* Darker shade of blue when focused */
-  color: white; /* Keeping text color white for contrast */
-  border-color: white; /* High contrast border on focus */
-}
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  text-align: left;
+  transform: translateY(-200%);
+  transition: transform 0.3s;
+  }
+  
+  .skip-link:focus {
+  transform: translateY(0);
+  }
 
 /* Header and Footer */
 header, footer {
