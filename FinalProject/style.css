@@ -305,3 +305,28 @@ input[type="submit"]:hover {
     background: #007bff;
 }
 
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.skip-link {
+background: black;
+color: #fff;
+font-weight: 700;
+padding: 4px;
+position: absolute;
+text-align: left;
+transform: translateY(-200%);
+transition: transform 0.3s;
+}
+
+.skip-link:focus {
+transform: translateY(0);
+}
