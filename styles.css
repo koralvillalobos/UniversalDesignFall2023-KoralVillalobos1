@@ -38,7 +38,7 @@ img {
 }
 
 .skip-link {
-  background: black;
+  background: #0074d9; /* Adjust the background color */
   color: #fff;
   font-weight: 700;
   padding: 4px;
@@ -46,11 +46,12 @@ img {
   text-align: left;
   transform: translateY(-200%);
   transition: transform 0.3s;
-  }
-  
-  .skip-link:focus {
+}
+
+.skip-link:focus {
   transform: translateY(0);
-  }
+}
+
 
 /* Header and Footer */
 header, footer {
